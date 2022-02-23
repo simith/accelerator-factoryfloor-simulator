@@ -1,0 +1,126 @@
+{
+    "browseName": "RoboticArm",
+    "nodeId": "roboticarmnode",
+    "list": [
+        {
+            "browseName": "baseMotor",
+            "nodeId": "baseMotor", 
+            "minimumSamplingInterval": 3000, 
+            "dataType": "Boolean",
+            "getFunc": "generate_sequence_double_30"
+        },
+        {
+            "browseName": "baseAccelerometer",
+            "nodeId": "baseAccelerometerId",
+            "list": [
+                    {
+                        "browseName": "x",
+                        "nodeId": "xId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double"
+                    },
+                    {
+                        "browseName": "y",
+                        "nodeId": "yId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double"
+                    },
+                    {
+                        "browseName": "z",
+                        "nodeId": "zId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double_30"
+                    }
+            ]
+        },
+        {
+            "browseName": "arm",
+            "nodeId": "baseAccelerconveyorometerId",
+            "list": [
+                    {
+                        "browseName": "speed",
+                        "nodeId": "speedIdId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double"
+                    },
+                    {
+                        "browseName": "accel",
+                        "nodeId": "accelId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double"
+                    },
+                    {
+                        "browseName": "vbration",
+                        "nodeId": "vibId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double_30"
+                    },
+                    {
+                    "browseName": "swinger",
+                    "nodeId": "swingerId",
+                    "list": 
+                        [
+                            {
+                                "browseName": "speed",
+                                "nodeId": "speedIdId", 
+                                "minimumSamplingInterval": 1000, 
+                                "dataType": "Double",
+                                "getFunc": "generate_sequence_double"
+                            },
+                            {
+                                "browseName": "angle",
+                                "nodeId": "angleId", 
+                                "minimumSamplingInterval": 100, 
+                                "dataType": "Double",
+                                "getFunc": "generate_sequence_double"
+                            },
+                            {
+                                "browseName": "internalMech",
+                                "nodeId": "internalMechId",
+                                "list": 
+                                    [
+                                        {
+                                            "browseName": "speed",
+                                            "nodeId": "ispeedIdId", 
+                                            "minimumSamplingInterval": 1000, 
+                                            "dataType": "Integer",
+                                            "getFunc": "generate_sequence_integer"
+                                        },
+                                        {
+                                            "browseName": "angle",
+                                            "nodeId": "iangleId", 
+                                            "minimumSamplingInterval": 100, 
+                                            "dataType": "Double",
+                                            "getFunc": "generate_sequence_double"
+                                        },
+                                        {
+                                            "browseName": "switchState",
+                                            "nodeId": "swStateId", 
+                                            "minimumSamplingInterval": 1000, 
+                                            "dataType": "Boolean",
+                                            "getFunc": "generate_boolean"
+                                        }
+                                    ]
+                                }
+
+
+                        ]
+                    }
+                
+                ]
+        },
+        {
+            "browseName": "knob",
+            "nodeId": "knobId", 
+            "minimumSamplingInterval": 3000, 
+            "dataType": "Integer",
+            "getFunc": "generate_sequence_double_30"
+        }
+    ]
+}

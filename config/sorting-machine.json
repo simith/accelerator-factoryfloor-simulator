@@ -1,0 +1,25 @@
+{
+  "browseName": "Factory",
+  "nodeId": "factoryId",
+  "list": [
+    {
+      "browseName": "SortingMachine",
+      "nodeId": "sortingmachinenode",
+      "list": [
+        {
+          "browseName": "SortingMachineLoadSensor",
+          "nodeId": "loadSensorId",
+          "list": [
+            {
+              "browseName": "Temperature",
+              "nodeId": "stateId",
+              "minimumSamplingInterval": 1000,
+              "dataType": "Double",
+              "getFunc": "generate_sequence_double"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+    "browseName": "RoboticArm",
+    "nodeId": "roboticarmnode",
+    "list": [
+        {
+            "browseName": "baseAccelerometer",
+            "nodeId": "baseAccelerometerId",
+            "list": [
+                    {
+                        "browseName": "x",
+                        "nodeId": "xId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double"
+                    },
+                    {
+                        "browseName": "y",
+                        "nodeId": "yId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double"
+                    },
+                    {
+                        "browseName": "z",
+                        "nodeId": "zId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double_30"
+                    }
+            ]
+        },
+        {
+            "browseName": "arm",
+            "nodeId": "baseAccelerconveyorometerId",
+            "list": [
+                    {
+                        "browseName": "speed",
+                        "nodeId": "speedIdId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double"
+                    },
+                    {
+                        "browseName": "accel",
+                        "nodeId": "accelId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double"
+                    },
+                    {
+                        "browseName": "vbration",
+                        "nodeId": "vibId", 
+                        "minimumSamplingInterval": 1000, 
+                        "dataType": "Double",
+                        "getFunc": "generate_sequence_double_30"
+                    }
+            ]
+        }
+    ]
+    }

@@ -1,0 +1,27 @@
+{
+    "browseName": "MyFactoryDevices",
+    "nodeId": "MyFactoryDevicesId",
+    "list": [
+        {
+            "browseName": "ConveyorSpeed",
+            "nodeId": "ConveyorSpeedId",
+            "minimumSamplingInterval": 1000,        
+            "dataType": "Double",
+            "getFunc": "generate_sequence_double_30"
+        },
+        {
+            "browseName": "MotorCurrent",
+            "nodeId": "MotorCurrentId",
+            "minimumSamplingInterval": 500,
+            "dataType": "Double",
+            "getFunc": "generate_sequence_double"
+        },
+        {
+            "browseName": "MotorRpm",
+            "nodeId": "MotorRpmId",
+            "minimumSamplingInterval": 100,
+            "dataType": "Double",
+            "getFunc": "generate_sequence_double"
+        }
+    ]
+}
